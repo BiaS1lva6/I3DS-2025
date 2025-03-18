@@ -2,21 +2,21 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Footer from "./components/footer/Footer";
 import MovieCard from "./components/movieCard/MovieCard";
-import Logo from "./assets/devflix.png"
-import Lupa from "./assets/search.svg"
-// import Logo from "";
+import Logo from "./assets/devflix.png";
+import Lupa from "./assets/search.svg";
 
 const App = () => {
   const [search, setSearch] = useState("");
   const [movies, setMovies] = useState([]);
 
   //Utilizando chave de API do arquivo .env
-  const apiKey = import.meta.env.VITE_OMDB_API_KEY;
+  //const apiKey = import.meta.env.VITE_OMDB_API_KEY;
+  const apiKey = "e4d577fa"; 
   const apiUrl = `https://omdbapi.com/?apikey=${apiKey}`;
 
   //Alimentando com dados para não ficar nulo com useEffect
   useEffect(() => {
-    searchMovies("Batman");
+    searchMovies("Barbie");
   }, []);
 
   //criando a conexão com a API e trazendo informações
@@ -44,11 +44,7 @@ const App = () => {
           type="text"
           placeholder="Pesquise por filmes"
         />
-        <img
-          onClick={() => searchMovies(search)}
-          src={Lupa}
-          alt=""
-        />
+        <img onClick={() => searchMovies(search)} src={Lupa} alt="" />
       </div>
 
       {movies?.length > 0 ? (
@@ -62,8 +58,8 @@ const App = () => {
       )}
 
       <Footer
-        devName={" ProfCastello"}
-        devLink={"https://github.com/ProfCastello"}
+        devName={" Bia Silva"}
+        devLink={"https://github.com/BiaS1lva6"}
       />
     </div>
   );
