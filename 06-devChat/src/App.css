@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+#chat-container{
+    width: 400px;
+    height: 600px;
+}
+
+#App{
+    background-color: #4E4147;
+}
+
+#join-box{
+ background-color: #A68997;
+}
+
+#chat-container{
+    background-color: #A68997;
+}
+
+#join-button{
+    background-color: #E1BBCC;
+}
+
+#App {
+    font-family: "Nunito", sans-serif;
+}
