@@ -10,7 +10,37 @@ body{
     
 }
 
+.custom-header {
+    background-color: #416317;
+  }
 .buscar, .buscar::placeholder{
     color: #d7d7d7;
     background-color: #132101;
 }
+
+.promoCard{
+    width: 280px;
+    transition: transform 0.2s;
+    background-color: #416317;
+    color: #d7d7d7;
+}
+
+.promoCard h5{
+    color: #daa520;
+}
+
+.promoCard:hover{
+    transform: scale(1.05);
+}
+
+.desconto {
+    background-color: #4cd930;
+  }
+
+  .carValor{
+    color: #4cd930;
+  }
+
+  #addCarrinho:hover{
+    background-color: #639e1c;
+  }
