@@ -1,20 +1,29 @@
 import React from "react";
+import { useNavigate } from "react-router";
 
 const CarrinhoOffCanvas = (props) => {
+  const navigate = useNavigate();
+
   const total = props.carrinhoItem.reduce(
     (acc, item) =>
       acc + (item.preco - (item.preco * item.desconto) / 100) * item.quantidade,
     0
   );
+
+  const goToCheckout = () => {
+      navigate("/checkout");
+  }
+
   return (
     <div
       id="carrinhoOffCanvas"
       className="offcanvas offcanvas-end"
-      style={{ background: "#364A63" }}
+      style={{ background:  "#132101"}}
     >
       <div
+        
         className="offcanvas-header text-light"
-        style={{ background: "#1b2838" }}
+        style={{ background: "#416317" }}
       >
         <h5 className="offcanvas-title">
           {" "}
@@ -105,6 +114,9 @@ const CarrinhoOffCanvas = (props) => {
             <button
               id="addcarrinho"
               className="btn btn-success desconto border-0 w-100 mt-2 text-light"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#carrinhoOffCanvas"
+              onClick={goToCheckout}
             >
               Finalizar Compra
             </button>
