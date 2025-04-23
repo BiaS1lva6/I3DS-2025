@@ -1,47 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-body{
-    font-family: 'Inter', sans-serif;
-    background-color: #132101;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #d7d7d7;
-    
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #132101;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #d7d7d7;
 }
 
 .custom-header {
-    background-color: #416317;
-  }
-.buscar, .buscar::placeholder{
-    color: #d7d7d7;
-    background-color: #132101;
+  background-color: #416317;
+}
+.buscar,
+.buscar::placeholder {
+  color: #d7d7d7;
+  background-color: #132101;
 }
 
-.promoCard{
-    width: 280px;
-    transition: transform 0.2s;
-    background-color: #416317;
-    color: #d7d7d7;
+.promoCard {
+  width: 280px;
+  transition: transform 0.2s;
+  background-color: #416317;
+  color: #d7d7d7;
 }
 
-.promoCard h5{
-    color: #daa520;
+.promoCard h5 {
+  color: #daa520;
 }
 
-.promoCard:hover{
-    transform: scale(1.05);
+.promoCard:hover {
+  transform: scale(1.05);
 }
 
 .desconto {
-    background-color: #4cd930;
-    color: #416317;
-  }
+  background-color: #4cd930;
+  color: #416317;
+}
 
-  .carValor{
-    color: #4cd930;
-  }
+.carValor {
+  color: #4cd930;
+}
 
-  #addCarrinho:hover{
-    background-color: #639e1c;
-  }
+#addCarrinho:hover {
+  background-color: #639e1c;
+}

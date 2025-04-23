@@ -1,16 +1,21 @@
-
-import './App.css'
-import Header from './components/Header'
-import Promotion from './components/Promotion'
+import { useState } from "react";
+import "./App.css";
+import Header from "./components/Header";
+import Promotion from "./components/Promotion";
 
 function App() {
+  const [contador, setContdor] = useState(0);
+
+  const hadleAddCarinho = () => {
+    setContdor(contador + 1); 
+  }
 
   return (
     <>
-     <Header />
-     <Promotion />
+      <Header contadorJogos={contador} />
+      <Promotion onAddCarinho={hadleAddCarinho}/> 
     </>
-  )
+  );
 }
 
-export default App
+export default App;
